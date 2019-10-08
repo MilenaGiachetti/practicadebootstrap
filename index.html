@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Pagina Web hecha con Bootstrap 4</title>
+    <title>Práctica de Bootstrap 4</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
 <body>
@@ -23,25 +23,55 @@
                     <li class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" id="menu-categorias" data-toggle="dropdown" aria-haspopup="true">Productos</a>
                         <div class="dropdown-menu" aria-labelledby="menu-categorias">
-                            <a href="#" class="dropdown-item">Dunno</a>
-                            <a href="#" class="dropdown-item">still dunno</a>
-                            <a href="#" class="dropdown-item">pues que te digo...</a>
+                            <a href="#" class="dropdown-item">Computadoras</a>
+                            <a href="#" class="dropdown-item">Laptops</a>
+                            <a href="#" class="dropdown-item">Smartphones</a>
+                            <a href="#" class="dropdown-item">Drones</a>
+                            <a href="#" class="dropdown-item">Accesorios</a>
                         </div>
                     </li>
                     <li class="nav-item">
                         <a href="#" class="nav-link">Contacto</a>
                     </li>
                 </ul>
-                <form action="" class="form-inline">
-                    <input type="text" class="form-control mr-2" placeholder="Buscar" aria-label="Buscar">
-                    <button class="btn btn-primary">Buscar</button>
+                <form action="" class="form-inline my-2 my-lg-0">
+                    <input type="text" class="form-control mr-sm-2" placeholder="Buscar" aria-label="Buscar">
+                    <button class="btn btn-primary mt-3 mt-sm-0" type="submit">Buscar</button>
                 </form>
             </div>
         </div>
     </nav>
-
     <div class="container">
-        <div class="row"></div>
+        <div class="row mt-5">
+            <div class="col">
+                <div class="carousel slide" id="principal-carousel" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#principal-carousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#principal-carousel" data-slide-to="1"></li>
+                        <li data-target="#principal-carousel" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="img/s1.jpg" alt="">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/s2.jpg" alt="">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/s3.jpg" alt="">
+                        </div>
+                    </div>
+                    <a href="#principal-carousel" class="carousel-control-prev" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Anterior</span>
+                    </a>
+                    <a href="#principal-carousel" class="carousel-control-next" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Siguiente</span>
+                    </a>
+                </div>
+            </div>
+        </div>
     </div>
 
     <script src="js/jquery-3.4.1.min.js"></script>
